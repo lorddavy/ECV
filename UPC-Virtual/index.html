@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>MegaChat</title>
+
+		<meta name="description" content="Chat 3D de la UPF">
+		<meta name="author" content="David Pérez y Marti Serrallonga">
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+
+	<body>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="page-header">
+				<h1> UPF MegaChat </h1>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<div id="chatEntry">
+					<h3>Bienvenido al MegaChat de la UPF</h3>
+					<p>Escriba su nombre para empezar a chatear: </p>
+					<input type="text" id="name" placeholder="Escribe tu nombre..." onkeyup="teclaPulsada()">
+					<button type="button" onclick="entryToChat()">EMPEZAR A CHATEAR</button>
+			</div>
+			<div id="chatArea">
+				<div id="chatMsgs">
+					<p>Area chat</p>
+				</div>
+				<input type="text" id="msg" placeholder="Escriba su mensaje aquí..." onkeyup="teclaPulsada()">
+				<button type="button" name="button" onclick="listoClick()">Enviar</button>
+			</div>
+		</div>
+		<div class="col-md-8">
+			<div id = "graphicsArea">
+				<button type="button" name="btn_cabina" onclick="setCabin()">Cabina</button>
+			
+			</div>
+		</div>
+	</div>
+</div>
+
+	
+	<script src="./graphics/three.js"></script>
+    <script src="./graphics/OrbitControls.js"></script>
+    <script src="./graphics/MTLLoader.js"></script>
+    <script src="./graphics/OBJLoader.js"></script>
+    <script src="./graphics/graphics.js"></script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/sillyclient.js"></script>
+    <script src="js/chat.js"></script>
+  </body>
+</html>

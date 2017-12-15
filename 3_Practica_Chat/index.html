@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>MegaChat</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/> <!-- load the CSS -->
+	</head>
+	<body>
+
+		<!-- main container -->
+		<div id="main">
+			<h1>UPF MegaChat</h1>
+			<div id="content">
+				<div id="presentacion">
+						<h3>Bienvenido al MegaChat de la UPF</h3>
+						<p>Escriba su nombre para empezar a chatear: </p>
+						<input type="text" id="name" placeholder="Escribe tu nombre..." onkeyup="teclaPulsada()">
+						<button type="button" onclick="start()">EMPEZAR A CHATEAR</button>
+				</div>
+				<div id="chat">
+
+					<div id="areaChat">
+
+					</div>
+					<input type="text" id="msg" placeholder="Escriba su mensaje aquí..." onkeyup="teclaPulsada()">
+					<button type="button" name="button" onclick="listoClick()">Enviar</button>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- load the JS -->
+		<script type="text/javascript" src="sillyclient.js"></script>
+		<script type="text/javascript" src="code.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,10 @@
+body {
+	margin: 0;
+	padding: 10px;
+	border: 0;
+}
+
+canvas {
+	background-color: yellow;
+	border: 1px dashed blue;
+}
